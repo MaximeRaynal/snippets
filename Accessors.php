@@ -1,3 +1,4 @@
+<?php
 /**
  * Gère l'accès aux propriétés privés
  * (remplace une longue list de Getters / Setters)
@@ -57,3 +58,4 @@ public function __call($name, $arguments) {
     return count($result) == 0 ? $this :
          (count($result) == 1 ? $result[$requieredProperties[0]] : $result);
 }
+?>  
